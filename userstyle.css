@@ -1,0 +1,54 @@
+/* Define the colour variables */
+:root {
+	--link-green: #0fd90c;
+	--background-grey: #3a3f40;
+	--text-grey: #c0c0c0;
+}
+
+/* Make links to files attached to a message a readable colour */
+.theme-flowdark .chat-message a[class="external embeddable"] {
+	color: var(--link-green) !important;
+}
+
+/* Make web links posted in a message a readable colour */
+.theme-flowdark .chat-message a[href^="http"] {
+	color: var(--link-green) !important;
+}
+
+/* Make email addresses posted in a message a readable colour */
+.theme-flowdark .chat-message a[href^="mailto"] {
+	color: var(--link-green) !important;
+}
+
+/* # references in flows */
+.theme-flowdark .tag {
+	color: var(--text-grey) !important;
+}
+
+/* '...' expansions */
+.theme-flowdark .truncate-toggle {
+	color: var(--text-grey) !important;
+}
+
+/* Links to files attached to a message */
+.theme-flowdark .file-properties {
+	color: var(--link-green) !important;
+}
+
+/* Makes 'X is typing' messages readable and match the dark theme*/
+.theme-flowdark .typing-users {
+	background-color: var(--background-grey) !important;
+	color: var(--text-grey) !important;
+}
+
+/* Makes quotes readable */
+.theme-flowdark blockquote p {
+	color: var(--text-grey) !important;
+	font-style: italic;
+}
+
+/* Position the 'NEW MESSAGES' notification object in a way that it won't overlap other messages in the thread */
+.theme-flowdark .chat-message .last-read-message-text {
+	position: relative !important;
+	left: 49% !important;
+}
