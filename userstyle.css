@@ -30,6 +30,11 @@
 	color: var(--text-grey) !important;
 }
 
+/* /me messages */
+.theme-flowdark h1 {
+	color: var(--text-grey) !important;
+}
+
 /* Links to files attached to a message */
 .theme-flowdark .file-properties {
 	color: var(--link-green) !important;
